@@ -1,0 +1,84 @@
+//EJERCICIO 1
+
+// 1
+
+let estudiante = {
+  nombre: "Valeria",
+  apellido: "Paparelli",
+  camada: 6,
+  esParcial: true,
+};
+
+// 2
+
+let devolverSituacionAlumno = (nota) => {
+  let condicionFinal = "";
+  if (nota < 4) {
+    condicionFinal = "desaprobado";
+  } else if (nota <= 4 || nota < 7) {
+    condicionFinal = "debe rendir examen final";
+  } else if (nota >= 7) {
+    condicionFinal = "promocionado";
+  }
+  return `El alumno obtuvo una nota igual a ${nota} por lo tanto su condición es ${condicionFinal}`;
+};
+
+let condicionFinal = devolverSituacionAlumno(9);
+console.log(condicionFinal);
+
+//EJERCICIO 2
+
+// 1 - 2 -2a
+
+let clase = [
+  {
+    nombre: "Valeria",
+    apellido: "Paparelli",
+    bimestre: 1,
+  },
+  {
+    nombre: "Francisco",
+    apellido: "Lopez",
+    bimestre: 1,
+  },
+  {
+    nombre: "Maia",
+    apellido: "Nardi",
+    bimestre: 1,
+  },
+];
+
+// 2b
+
+console.log(clase);
+
+// 3
+
+let siguienteCursada = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    array[i].bimestre = array[i].bimestre + 1;
+  }
+};
+
+// 4
+
+console.log(clase);
+siguienteCursada(clase);
+console.log(clase);
+
+//EJERCICIO 3
+
+const asistenciaMinima = 23;
+
+let estadoAlumnos = (asistencias, condicion) => {
+  let estadoAlumno = "";
+  if (asistencias >= asistenciaMinima && condicion) {
+    estadoAlumno = "Aprobado";
+  } else {
+    estadoAlumno = "Desaprobado";
+  }
+  return estadoAlumno;
+};
+
+let estadoAlumno = estadoAlumnos(30, true);
+console.log(estadoAlumno);
