@@ -18,14 +18,6 @@ matrizDosPorDos[1][0] = 5;
 
 //4) Probemos ahora crear matrices que no sean cuadradas, ¿como lo haríamos?
 
-const matrizNoCuadrada = [
-  [3, 4, 5, 6],
-  [1, 4],
-  [9, 8, 7],
-];
-
-//console.table(matrizNoCuadrada);
-
 let arrayMatriz = [];
 let arrayX = ["x0", "x1", "x2"];
 let arrayY = ["y0", "y1", "y2"];
