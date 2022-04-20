@@ -8,7 +8,7 @@
   ]; */
 
 // CALCULAR GASTO TOTAL DE LA TERCER SEMANA
-//Para sacar el gasto de una semana tengo que recoorer una fila
+//Para sacar el gasto de una semana tengo que recorrer una fila
 
 /* let totalSemanaTres = 0;
 
@@ -27,7 +27,7 @@ for (let i = 0; i < gastos[2].length; i++) {
 /* let totalJueves = 0;
 
 for (let i = 0; i < gastos.length; i++) {
-  //Siempre la cantidad de columnas que tenga va a ser el gasto.length
+  //Siempre la cantidad de columnas que tenga va a ser el gastos.length
   totalJueves += gastos[i][3];
 }
  */
@@ -77,7 +77,7 @@ for (let i = 0; i < gastos.length; i++) {
   }
   arrGastosSemana.push(gastoSemanal); //Antes de pasar a la siguiente semana lo pusheo
   gastoSemanal = 0; // y lo reseteo
-  //Pao a la siguiente semana y hago lo mismo
+  //Paso a la siguiente semana y hago lo mismo
   //Si antes no hago esto me suma el total
 }
 

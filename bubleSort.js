@@ -142,3 +142,43 @@ let ordenarPorEdadTitular = (arr) => {
 };
 
 //ordenarPorEdadTitular(arrayCuentas);
+
+//¿Cómo podrías ordenar la colección, de menor a mayor, considerando solo la estatura?
+//Utiliza bubble sort.
+
+let personas = [
+  {
+    nombre: "Dua",
+    apellido: "Lipa",
+    ocupacion: "cantante",
+    estatura: 173,
+  },
+  {
+    nombre: "Ariana",
+    apellido: "Grande",
+    ocupacion: "cantante",
+    estatura: 160,
+  },
+  {
+    nombre: "Taylor",
+    apellido: "Swift",
+    ocupacion: "cantante",
+    estatura: 180,
+  },
+];
+
+let ordenarPorEstatura = (array) => {
+  let temp;
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length - 1; j++) {
+      if (array[j].estatura > array[j + 1].estatura) {
+        temp = array[j].estatura;
+        array[j].estatura = array[j + 1].estatura;
+        array[j + 1].estatura = temp;
+      }
+    }
+  }
+  console.log(array);
+};
+
+ordenarPorEstatura(personas);

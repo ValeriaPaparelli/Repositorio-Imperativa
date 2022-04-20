@@ -61,7 +61,8 @@ let generarMatriz = () => {
   return matriz;
 };
 
-let matriz = generarMatriz();
+//let matriz = generarMatriz();
+//console.table(matriz);
 
 let sumarNumerosMatrizDiez = (varMatriz) => {
   let sumarNumeros = 0;
@@ -75,16 +76,36 @@ let sumarNumerosMatrizDiez = (varMatriz) => {
 
 //console.log(sumarNumerosMatrizDiez(matriz));
 
-/* 3) Por último, vamos a generar dos funciones:
-  a) crear una función que nos retorne la sumatoria de la primer y última
-  columna (sumar la primera Y ya la última)
+//3) Por último, vamos a generar dos funciones:
+//a) crear una función que nos retorne la sumatoria de la primer y última
+//columna (sumar la primera Y ya la última)
 
+let sumarDiagPrincipal = (matriz) => {
+  let sumaMatriz = 0;
+  for (let i = 0; i < matriz.length; i++) {
+    sumaMatriz += matriz[i][i];
+  }
+  return sumaMatriz;
+};
 
-  b) crear una función que nos retorne la sumatoria de la quinta y sexta fila (la
-  suma de ambas)
-  c) Una va a sumar los valores en la diagonal marcada en rojo.
-  d) La otra va a marcar los valores de la diagonal marcada en verde.
-  Ambas funciones deben devolver un resultado único. */
+//console.log(sumarDiagPrincipal(matriz));
+
+//b) crear una función que nos retorne la sumatoria de la quinta y sexta fila (la
+//suma de ambas)
+
+let sumarDiagSecundaria = (matriz) => {
+  let sumaMatriz = 0;
+  for (let i = 0; i < matriz.length; i++) {
+    sumaMatriz += matriz[i][matriz.length - (1 + i)];
+  }
+  return sumaMatriz;
+};
+
+//console.log(sumarDiagSecundaria(matriz));
+
+//c) Una va a sumar los valores en la diagonal marcada en rojo.
+//d) La otra va a marcar los valores de la diagonal marcada en verde.
+//Ambas funciones deben devolver un resultado único.
 
 //Dada una matriz, recorrer sus valores y sumar solo los números que estén por
 //encima o sean iguales a 10, pero menores que 1000.
@@ -105,4 +126,4 @@ for (let i = 0; i < numeros.length; i++) {
   }
 }
 
-console.log(sumarNumeros);
+//console.log(sumarNumeros);
