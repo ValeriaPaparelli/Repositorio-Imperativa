@@ -42,7 +42,7 @@ let ordenarEdadesDesc = (array) => {
 
 //2-¿Cómo pudieras ordenar el array anterior, alfabéticamente?
 
-const letras = ["C", "A", "D", "E", "H", "Z", "J", "L"];
+const letras = ["C", "A", "D", "E", "H", "G", "F", "B"];
 
 let ordenarAlf = (array) => {
   let temp;
@@ -122,7 +122,7 @@ let ordenarPorSaldoCuenta = (arr) => {
   console.log(arr);
 };
 
-//ordenarPorSaldoCuenta(arrayCuentas);
+ordenarPorSaldoCuenta(arrayCuentas);
 
 //b. Desarrollar una función que ordene internamente de forma ascendente según la
 //edad del titular de cada cuenta, la misma deberá retornar él array ordenado.
@@ -181,4 +181,4 @@ let ordenarPorEstatura = (array) => {
   console.log(array);
 };
 
-ordenarPorEstatura(personas);
+//ordenarPorEstatura(personas);
